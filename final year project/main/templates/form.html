@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>
+	PROJECT
+</TITLE>
+
+<style> 
+	input[type=number] {
+  width: 35%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+input[type=submit] {
+  width: 50%;
+  padding: 20px 25px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: red;
+
+}
+	</style>
+
+</HEAD>
+
+<BODY style="background-color: rgb(5, 156, 158);text-align: center;font-size: 25px;">
+    <br>
+    <br>
+    <br><h3> OPTIMIZTION OF SOFTWARE SYSTEM </h3>
+    <div style="text-align: center;">
+    <form action="{{ url_for("gfg")}}" method="post">
+
+        <label for="size">SIZE  </label><br>
+        <input type="number"  step="0.01" id="size" name="a1" placeholder="code lines"><br> 
+        <br><label for="complixity">COMPLIXITY</label><br>
+        <input type="number"  step="0.01" id="complixity" name="a2" placeholder="1-5"><br>
+        <br><label for="experiance">EXPERANCE </label><br>
+        <input type="number"  step="0.01" id="experiance" name="a3" placeholder="experiance"><br> 
+        <br><label for="cost_per_person_month">Cost_Per_Person_Month</label><br>
+        <input type="number"  step="0.01" id="cost_per_person_month" name="a4" placeholder="Cost_Per_Person_Month"><br>
+
+        <br><label for="fp">FUNCTION_POINTS  </label><br>
+        <input type="number"  step="0.01" id="fp" name="a5" placeholder="fp"><br> 
+        <br><label for="up">USE_CASE_POINTS </label><br>
+        <input type="number"  step="0.01" id="up" name="a6" placeholder="up"><br>
+
+        <br><button type="submit">Submit</button>
+
+    </div>
+
+	
+</BODY>
+
+</HTML>
